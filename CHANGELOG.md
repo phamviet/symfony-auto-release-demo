@@ -1,3 +1,32 @@
+# v0.0.6 (Thu Oct 20 2022)
+
+#### ⚠️ Pushed to `production`
+
+- aaa ([@phamviet](https://github.com/phamviet))
+
+#### Authors: 1
+
+- Viet Pham ([@phamviet](https://github.com/phamviet))
+
+---
+
+# v0.0.5 (Thu Oct 20 2022)
+
+#### 🐛 Bug Fix
+
+- change branch [#3](https://github.com/phamviet/symfony-auto-release-demo/pull/3) ([@phamviet](https://github.com/phamviet))
+- fix pr branch [#3](https://github.com/phamviet/symfony-auto-release-demo/pull/3) ([@phamviet](https://github.com/phamviet))
+
+#### ⚠️ Pushed to `production`
+
+- Merge remote-tracking branch 'origin/main' into production ([@phamviet](https://github.com/phamviet))
+
+#### Authors: 1
+
+- Viet Pham ([@phamviet](https://github.com/phamviet))
+
+---
+
 # v0.0.4 (Thu Oct 20 2022)
 
 #### ⚠️ Pushed to `production`
