@@ -15,6 +15,7 @@ jobs:
     env:
       RUNTIME_OS: linux
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
     - name: Checkout
       uses: actions/checkout@v2
@@ -29,3 +30,9 @@ jobs:
     - name: "Auto shipit"
       run: |
         ./bin/auto shipit
+    - name: Create Pull Request
+      id: cpr
+      uses: peter-evans/create-pull-request@v4
+      with:
+        title: AWS Release
+        delete-branch: true
