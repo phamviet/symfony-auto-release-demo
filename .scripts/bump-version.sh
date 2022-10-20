@@ -7,5 +7,13 @@ echo RUNNING FROM "$0"
 VERSION=$(cat ./VERSION)
 
 # shellcheck disable=SC2046
-# git commit -am "Bump package.json version to v${VERSION} [skip ci]"
-# composer update
+composer config version $(cat VERSION)
+git commit -am "Bump composer version to v${VERSION} [skip ci]"
+
+git checkout develop
+git merge production -m "Merge from production"
+git push origin develop
+
+git checkout main
+git merge production -m "Release v${VERSION}"
+git push origin main
