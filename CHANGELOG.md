@@ -1,5 +1,26 @@
 # v0.0.6 (Thu Oct 20 2022)
 
+#### 🐛 Bug Fix
+
+- token ([@phamviet](https://github.com/phamviet))
+- Merge branch 'production' of github.com:phamviet/symfony-auto-release-demo into production ([@phamviet](https://github.com/phamviet))
+- auto merge ([@phamviet](https://github.com/phamviet))
+
+#### ⚠️ Pushed to `production`
+
+- Merge remote-tracking branch 'origin/main' into production ([@phamviet](https://github.com/phamviet))
+- delete-branch ([@phamviet](https://github.com/phamviet))
+- Merge branch 'production' of github.com:phamviet/symfony-auto-release-demo into production ([@phamviet](https://github.com/phamviet))
+- aaa ([@phamviet](https://github.com/phamviet))
+
+#### Authors: 1
+
+- Viet Pham ([@phamviet](https://github.com/phamviet))
+
+---
+
+# v0.0.6 (Thu Oct 20 2022)
+
 #### ⚠️ Pushed to `production`
 
 - auto merge ([@phamviet](https://github.com/phamviet))
