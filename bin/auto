@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+AUTO_DIR="$DIR/.auto"
+
+if [[ ! -d "$AUTO_DIR" ]]; then
+  mkdir $AUTO_DIR
+  # shellcheck disable=SC2164
+  curl -vkL -o - https://github.com/intuit/auto/releases/download/v10.37.6/auto-macos.gz | gunzip > "$AUTO_DIR/auto"
+  chmod a+x "$AUTO_DIR/auto"
+fi
+
+exec "$AUTO_DIR/auto" "$@"

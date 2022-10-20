@@ -1,0 +1,13 @@
+{
+  "plugins": [
+    "git-tag",
+    "all-contributors",
+    "conventional-commits",
+    "released"
+  ],
+  "owner": "phamviet",
+  "repo": "symfony-auto-release-demo",
+  "name": "Viet Pham",
+  "email": "viet@webonyx.com",
+  "onlyPublishWithReleaseLabel": true
+}
