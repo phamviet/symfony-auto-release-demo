@@ -5,9 +5,9 @@
     "conventional-commits",
     "released"
   ],
+  "baseBranch": "production",
   "owner": "phamviet",
   "repo": "symfony-auto-release-demo",
-  "name": "Viet Pham",
-  "email": "viet@webonyx.com",
-  "onlyPublishWithReleaseLabel": true
+  "author": "Viet Pham <viet@webonyx.com>",
+  "onlyPublishWithReleaseLabel": false
 }

@@ -1,4 +1,5 @@
-
+/.idea
+/bin/.auto/
 ###> symfony/framework-bundle ###
 /.env.local
 /.env.local.php
