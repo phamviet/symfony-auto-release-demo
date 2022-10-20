@@ -41,4 +41,3 @@ jobs:
         title: AWS Release
         branch: production
         base: main
-        delete-branch: true
