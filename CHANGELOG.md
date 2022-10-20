@@ -1,3 +1,15 @@
+# v0.0.10 (Thu Oct 20 2022)
+
+#### ⚠️ Pushed to `production`
+
+- auto latest ([@phamviet](https://github.com/phamviet))
+
+#### Authors: 1
+
+- Viet Pham ([@phamviet](https://github.com/phamviet))
+
+---
+
 # v0.0.9 (Thu Oct 20 2022)
 
 #### ⚠️ Pushed to `production`
