@@ -1,3 +1,15 @@
+# v0.0.6 (Thu Oct 20 2022)
+
+#### ⚠️ Pushed to `production`
+
+- aaa ([@phamviet](https://github.com/phamviet))
+
+#### Authors: 1
+
+- Viet Pham ([@phamviet](https://github.com/phamviet))
+
+---
+
 # v0.0.5 (Thu Oct 20 2022)
 
 #### 🐛 Bug Fix
