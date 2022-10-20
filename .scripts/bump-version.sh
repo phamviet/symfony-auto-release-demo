@@ -8,3 +8,4 @@ VERSION=$(cat ./VERSION)
 
 # shellcheck disable=SC2046
 # git commit -am "Bump package.json version to v${VERSION} [skip ci]"
+# composer update
