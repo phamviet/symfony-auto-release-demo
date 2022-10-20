@@ -38,4 +38,5 @@ jobs:
       uses: peter-evans/create-pull-request@v4
       with:
         title: AWS Release
+        branch: main
         delete-branch: true
