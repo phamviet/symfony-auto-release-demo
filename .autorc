@@ -2,8 +2,7 @@
   "plugins": [
     "git-tag",
     "all-contributors",
-    "conventional-commits",
-    "released"
+    "conventional-commits"
   ],
   "baseBranch": "production",
   "owner": "phamviet",
