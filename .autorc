@@ -1,6 +1,5 @@
 {
   "plugins": [
-    "git-tag"
   ],
   "baseBranch": "production",
   "owner": "phamviet",
