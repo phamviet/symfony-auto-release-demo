@@ -34,13 +34,13 @@ jobs:
       run: |
         ./bin/auto latest
 
-    - name: Create Pull Request
-      id: cpr
-      uses: peter-evans/create-pull-request@v4
-      with:
-        title: AWS Release
-        branch: production
-        base: main
+#    - name: Create Pull Request
+#      id: cpr
+#      uses: peter-evans/create-pull-request@v4
+#      with:
+#        title: AWS Release
+#        branch: production
+#        base: main
 
 #    - name: Automerge Pull Request
 #      if: steps.cpr.outputs.pull-request-operation == 'created'
