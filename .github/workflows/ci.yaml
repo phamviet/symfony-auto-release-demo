@@ -33,11 +33,12 @@ jobs:
     - name: "Auto shipit"
       run: |
         ./bin/auto shipit
+
     - name: Create Pull Request
       id: cpr
       uses: peter-evans/create-pull-request@v4
       with:
         title: AWS Release
-        branch: production
+        branch: auto-release/production
         base: main
         delete-branch: true
