@@ -1,3 +1,15 @@
+# v0.0.3 (Thu Oct 20 2022)
+
+#### ⚠️ Pushed to `production`
+
+- fix pr branch ([@phamviet](https://github.com/phamviet))
+
+#### Authors: 1
+
+- Viet Pham ([@phamviet](https://github.com/phamviet))
+
+---
+
 # v0.0.2 (Thu Oct 20 2022)
 
 #### ⚠️ Pushed to `production`
