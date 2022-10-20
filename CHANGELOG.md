@@ -25,6 +25,25 @@
 
 #### ⚠️ Pushed to `production`
 
+- Remove all-contributors ([@phamviet](https://github.com/phamviet))
+- xxx ([@phamviet](https://github.com/phamviet))
+- Merge branch 'production' of github.com:phamviet/symfony-auto-release-demo into production ([@phamviet](https://github.com/phamviet))
+
+#### Authors: 2
+
+- [@github-actions[bot]](https://github.com/github-actions[bot])
+- Viet Pham ([@phamviet](https://github.com/phamviet))
+
+---
+
+# v0.0.7 (Thu Oct 20 2022)
+
+#### 🐛 Bug Fix
+
+- AWS Release [#5](https://github.com/phamviet/symfony-auto-release-demo/pull/5) ([@phamviet](https://github.com/phamviet) [@github-actions[bot]](https://github.com/github-actions[bot]))
+
+#### ⚠️ Pushed to `production`
+
 - xxx ([@phamviet](https://github.com/phamviet))
 - Merge branch 'production' of github.com:phamviet/symfony-auto-release-demo into production ([@phamviet](https://github.com/phamviet))
 
