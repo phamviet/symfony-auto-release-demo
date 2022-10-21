@@ -1,3 +1,22 @@
+# v0.0.15 (Fri Oct 21 2022)
+
+#### 🐛 Bug Fix
+
+- Main [#9](https://github.com/phamviet/symfony-auto-release-demo/pull/9) ([@phamviet](https://github.com/phamviet))
+- less verbose auto download [#8](https://github.com/phamviet/symfony-auto-release-demo/pull/8) ([@phamviet](https://github.com/phamviet))
+- AWS Release [#6](https://github.com/phamviet/symfony-auto-release-demo/pull/6) ([@phamviet](https://github.com/phamviet) [@github-actions[bot]](https://github.com/github-actions[bot]))
+
+#### ⚠️ Pushed to `production`
+
+- shipit ([@phamviet](https://github.com/phamviet))
+
+#### Authors: 2
+
+- [@github-actions[bot]](https://github.com/github-actions[bot])
+- Viet Pham ([@phamviet](https://github.com/phamviet))
+
+---
+
 # v0.0.14 (Fri Oct 21 2022)
 
 #### 🐛 Bug Fix
