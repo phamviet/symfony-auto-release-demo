@@ -3,8 +3,6 @@
     ["version-file", {"publishScript":"./.scripts/bump-version.sh"}]
   ],
   "baseBranch": "production",
-  "owner": "phamviet",
-  "repo": "symfony-auto-release-demo",
   "author": "Viet Pham <viet@webonyx.com>",
-  "onlyPublishWithReleaseLabel": false
+  "onlyPublishWithReleaseLabel": true
 }
