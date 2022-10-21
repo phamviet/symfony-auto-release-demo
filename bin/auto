@@ -7,7 +7,7 @@ RUNTIME_OS=${RUNTIME_OS:-macos}
 if [[ ! -d "$AUTO_DIR" ]]; then
   mkdir $AUTO_DIR
   # shellcheck disable=SC2164
-  curl -vkL -o - "https://github.com/intuit/auto/releases/download/v10.37.6/auto-${RUNTIME_OS}.gz" | gunzip > "$AUTO_DIR/auto"
+  curl -kL -o - "https://github.com/intuit/auto/releases/download/v10.37.6/auto-${RUNTIME_OS}.gz" | gunzip > "$AUTO_DIR/auto"
   chmod a+x "$AUTO_DIR/auto"
 fi
 
