@@ -1,6 +1,7 @@
 {
   "plugins": [
-    ["version-file", {"publishScript":"./.scripts/bump-version.sh"}]
+    ["version-file", {"publishScript":"./.scripts/bump-version.sh"}],
+    "conventional-commits"
   ],
   "baseBranch": "production",
   "author": "Viet Pham <viet@webonyx.com>",
