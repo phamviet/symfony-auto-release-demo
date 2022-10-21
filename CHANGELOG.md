@@ -1,3 +1,15 @@
+# v0.0.14 (Fri Oct 21 2022)
+
+#### 🐛 Bug Fix
+
+- test onlyPublishWithReleaseLabel [#7](https://github.com/phamviet/symfony-auto-release-demo/pull/7) ([@phamviet](https://github.com/phamviet))
+
+#### Authors: 1
+
+- Viet Pham ([@phamviet](https://github.com/phamviet))
+
+---
+
 # v0.0.13 (Thu Oct 20 2022)
 
 #### ⚠️ Pushed to `production`
