@@ -1,3 +1,27 @@
+# v0.1.0 (Mon Nov 07 2022)
+
+#### 🚀 Enhancement
+
+- feat: change base branch ([@phamviet](https://github.com/phamviet))
+- feat: verbose auto ([@phamviet](https://github.com/phamviet))
+- feat: auto composer plugin ([@phamviet](https://github.com/phamviet))
+
+#### 🐛 Bug Fix
+
+- fix: disable release label ([@phamviet](https://github.com/phamviet))
+- fix: workflow ([@phamviet](https://github.com/phamviet))
+- add release script ([@phamviet](https://github.com/phamviet))
+
+#### ⚠️ Pushed to `main`
+
+- Merge remote-tracking branch 'origin/develop' ([@phamviet](https://github.com/phamviet))
+
+#### Authors: 1
+
+- Viet Pham ([@phamviet](https://github.com/phamviet))
+
+---
+
 # v0.0.15 (Fri Oct 21 2022)
 
 #### 🐛 Bug Fix
