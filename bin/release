@@ -1,0 +1,35 @@
+#!/bin/bash
+
+if [[ -z $GH_TOKEN ]]; then
+  echo No GH_TOKEN found
+  exit 1
+fi
+
+BASE_BRANCH=${BASE_BRANCH:-production}
+HEAD_BRANCH=${HEAD_BRANCH:-develop}
+OWNER=${OWNER:-phamviet}
+REPO=${REPO:-symfony-auto-release-demo}
+
+set -e
+
+echo "Creating pull request..."
+
+result=$(curl -sS -X POST -H "Accept: application/vnd.github+json" -H "Authorization: Bearer $GH_TOKEN" "https://api.github.com/repos/$OWNER/$REPO/pulls" -d '{"title":"Release PR","body":"","head":"'"$HEAD_BRANCH"'","base":"'"$BASE_BRANCH"'"}')
+error=$(echo "$result" | jq -r ".errors?[0].message?")
+
+if [[ "null" != "$error" ]]; then
+  echo "$error"
+  exit 1
+fi
+
+URL=$(echo "$result" | jq -r ".html_url")
+NUMBER=$(echo "$result" | jq -r ".number")
+
+echo "Pull request created: $URL"
+echo "Adding 'release' label to pull request..."
+
+curl --silent --output /dev/null -X POST -H "Accept: application/vnd.github+json" -H "Authorization: Bearer $GH_TOKEN" \
+  "https://api.github.com/repos/$OWNER/$REPO/issues/$NUMBER/labels" \
+  -d '{"labels":["release"]}'
+
+echo "Done"

@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [production]
+    branches: [main]
 
 jobs:
   auto:
@@ -30,9 +30,15 @@ jobs:
         php-version: ${{ matrix.php-versions }}
         coverage: "none"
 
+    - name: Use Node.js 14.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+
     - name: "Auto shipit"
       run: |
-        ./bin/auto shipit
+        yarn global add auto-plugin-composer
+        ./bin/auto latest
 
 #    - name: Create Pull Request
 #      id: cpr

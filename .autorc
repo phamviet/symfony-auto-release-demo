@@ -1,6 +1,6 @@
 {
   "plugins": [
-    ["version-file", {"publishScript":"./.scripts/bump-version.sh"}],
+    ["composer", {"publishScript":"./.scripts/bump-version.sh"}],
     "conventional-commits"
   ],
   "baseBranch": "production",

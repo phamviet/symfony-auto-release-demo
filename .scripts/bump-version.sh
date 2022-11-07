@@ -4,16 +4,16 @@ set -xe
 
 echo RUNNING FROM "$0"
 
-VERSION=$(cat ./VERSION)
+VERSION=$(composer config version)
+remote=${2:-origin}
+branch=${3:-main}
 
-# shellcheck disable=SC2046
-composer config version $(cat VERSION)
-git commit -am "Bump composer version to v${VERSION} [skip ci]"
+set -xe
 
 git checkout develop
-git merge production -m "Merge from production"
-git push origin develop
+git merge "$branch" -m "Merge from branch master v${VERSION} [skip ci]"
+git push "$remote" develop
 
-git checkout main
-git merge production -m "Release v${VERSION}"
-git push origin main
+git checkout production
+git merge "$branch" -m "Release v${VERSION} [skip ci]"
+git push "$remote" production
