@@ -38,7 +38,7 @@ jobs:
     - name: "Auto shipit"
       run: |
         yarn global add auto-plugin-composer
-        ./bin/auto latest
+        ./bin/auto latest --verbose
 
 #    - name: Create Pull Request
 #      id: cpr
