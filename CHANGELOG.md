@@ -1,3 +1,19 @@
+# v0.2.0 (Mon Nov 07 2022)
+
+#### 🚀 Enhancement
+
+- feat: use github-actions bot ([@phamviet](https://github.com/phamviet))
+
+#### ⚠️ Pushed to `main`
+
+- chore: Remove VERSION ([@phamviet](https://github.com/phamviet))
+
+#### Authors: 1
+
+- Viet Pham ([@phamviet](https://github.com/phamviet))
+
+---
+
 # v0.1.0 (Mon Nov 07 2022)
 
 #### 🚀 Enhancement
