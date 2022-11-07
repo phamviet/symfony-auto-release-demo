@@ -1,6 +1,7 @@
 {
   "plugins": [
     ["composer", {"publishScript":"./.scripts/bump-version.sh"}],
+    ["omit-commits", {"username":"github-actions[bot]", "subject": ["WIP", "SPIKE"]}],
     "conventional-commits"
   ],
   "baseBranch": "main",
