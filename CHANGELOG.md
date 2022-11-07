@@ -1,3 +1,16 @@
+# v0.3.1 (Mon Nov 07 2022)
+
+#### 🐛 Bug Fix
+
+- fix: ci ([@phamviet](https://github.com/phamviet))
+- fix: no git tags ([@phamviet](https://github.com/phamviet))
+
+#### Authors: 1
+
+- Viet Pham ([@phamviet](https://github.com/phamviet))
+
+---
+
 # v0.3.0 (Mon Nov 07 2022)
 
 #### 🚀 Enhancement
