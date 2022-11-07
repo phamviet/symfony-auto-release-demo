@@ -4,6 +4,6 @@
     "conventional-commits"
   ],
   "baseBranch": "main",
-  "author": "Viet Pham <viet@webonyx.com>",
+  "author": "github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
   "onlyPublishWithReleaseLabel": false
 }
