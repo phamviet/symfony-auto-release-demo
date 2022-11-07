@@ -3,7 +3,7 @@
     ["composer", {"publishScript":"./.scripts/bump-version.sh"}],
     "conventional-commits"
   ],
-  "baseBranch": "production",
+  "baseBranch": "main",
   "author": "Viet Pham <viet@webonyx.com>",
   "onlyPublishWithReleaseLabel": true
 }
