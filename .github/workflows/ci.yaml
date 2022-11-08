@@ -5,8 +5,8 @@ on:
     branches: [main]
   workflow_dispatch:
     inputs:
-      releaseLabel:
-        description: 'Release with label'
+      forceRelease:
+        description: 'Force release'
         required: true
         default: true
         type: boolean
@@ -42,16 +42,16 @@ jobs:
         node-version: 16
 
     - name: "Release"
-      if:  ${{ github.event.inputs.releaseLabel == 'true' }}
+      if:  ${{ github.event.inputs.forceRelease == 'false' }}
       run: |
         yarn global add auto-plugin-composer
         ./bin/auto latest --verbose
 
     - name: "Force release"
-      if:  ${{ github.event.inputs.releaseLabel == 'false' }}
+      if:  ${{ github.event.inputs.forceRelease == 'true' }}
       run: |
         yarn global add auto-plugin-composer
-        ./bin/auto latest --only-publish-with-release-label=false --verbose
+        ./bin/auto latest --only-publish-with-release-label false --verbose
 
 #    - name: Create Pull Request
 #      id: cpr
