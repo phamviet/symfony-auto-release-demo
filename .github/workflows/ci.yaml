@@ -1,18 +1,18 @@
 name: CI
 
 on:
-  - push:
-      branches: [main]
-  - workflow_dispatch:
-      inputs:
-        releaseLabel:
-          description: 'Release with label'
-          required: true
-          default: 'yes'
-          type: choice
-          options:
-            - yes
-            - no
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      releaseLabel:
+        description: 'Release with label'
+        required: true
+        default: 'yes'
+        type: choice
+        options:
+          - yes
+          - no
 
 jobs:
   auto:
