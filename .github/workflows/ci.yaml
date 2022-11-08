@@ -37,13 +37,13 @@ jobs:
         node-version: 16
 
     - name: "Manual release"
-      if:  ${{ github.event_name == 'workflow_dispatch' }}
+      if: "github.event_name == 'workflow_dispatch' && github.ref_name == 'main'"
       run: |
         yarn global add auto-plugin-composer
         ./bin/auto latest --verbose
 
     - name: "Release"
-      if:  ${{ github.event_name != 'workflow_dispatch' }}
+      if:  ${{ github.event_name == 'push' }}
       run: |
         yarn global add auto-plugin-composer
         ./bin/auto latest --verbose --only-publish-with-release-label
