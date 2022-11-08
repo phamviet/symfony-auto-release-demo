@@ -8,11 +8,8 @@ on:
       releaseLabel:
         description: 'Release with label'
         required: true
-        default: 'yes'
-        type: choice
-        options:
-          - yes
-          - no
+        default: true
+        type: boolean
 
 jobs:
   auto:
@@ -45,13 +42,13 @@ jobs:
         node-version: 16
 
     - name: "Release"
-      if:  ${{ github.event.inputs.releaseLabel == 'yes' }}
+      if:  ${{ github.event.inputs.releaseLabel == 'true' }}
       run: |
         yarn global add auto-plugin-composer
         ./bin/auto latest --verbose
 
     - name: "Force release"
-      if:  ${{ github.event.inputs.releaseLabel == 'no' }}
+      if:  ${{ github.event.inputs.releaseLabel == 'false' }}
       run: |
         yarn global add auto-plugin-composer
         ./bin/auto latest --only-publish-with-release-label=false --verbose
