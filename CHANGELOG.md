@@ -1,3 +1,15 @@
+# v0.4.1 (Tue Nov 08 2022)
+
+#### ⚠️ Pushed to `main`
+
+- Fix manual release ([@phamviet](https://github.com/phamviet))
+
+#### Authors: 1
+
+- Viet Pham ([@phamviet](https://github.com/phamviet))
+
+---
+
 # v0.4.0 (Tue Nov 08 2022)
 
 #### 🚀 Enhancement
