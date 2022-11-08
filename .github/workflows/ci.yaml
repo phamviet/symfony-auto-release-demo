@@ -3,13 +3,7 @@ name: CI
 on:
   push:
     branches: [main]
-  workflow_dispatch:
-    inputs:
-      forceRelease:
-        description: 'Force release'
-        required: true
-        default: true
-        type: boolean
+  workflow_dispatch
 
 jobs:
   auto:
@@ -41,17 +35,17 @@ jobs:
       with:
         node-version: 16
 
+    - name: "Manual release"
+      if:  ${{ github.event_name == 'workflow_dispatch' }}
+      run: |
+        yarn global add auto-plugin-composer
+        ./bin/auto latest --verbose --only-publish-with-release-label false
+
     - name: "Release"
-      if:  ${{ github.event.inputs.forceRelease == 'false' }}
+      if:  ${{ github.event_name != 'workflow_dispatch' }}
       run: |
         yarn global add auto-plugin-composer
         ./bin/auto latest --verbose
-
-    - name: "Force release"
-      if:  ${{ github.event.inputs.forceRelease == 'true' }}
-      run: |
-        yarn global add auto-plugin-composer
-        ./bin/auto latest --only-publish-with-release-label false --verbose
 
 #    - name: Create Pull Request
 #      id: cpr
