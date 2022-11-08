@@ -1,3 +1,22 @@
+# v0.4.0 (Tue Nov 08 2022)
+
+#### 🚀 Enhancement
+
+- feat: workflow_dispatch ([@phamviet](https://github.com/phamviet))
+
+#### ⚠️ Pushed to `main`
+
+- Update ci.yaml ([@phamviet](https://github.com/phamviet))
+- Manual release ([@phamviet](https://github.com/phamviet))
+- force release ([@phamviet](https://github.com/phamviet))
+- update ci ([@phamviet](https://github.com/phamviet))
+
+#### Authors: 1
+
+- Viet Pham ([@phamviet](https://github.com/phamviet))
+
+---
+
 # v0.3.1 (Mon Nov 07 2022)
 
 #### 🐛 Bug Fix
