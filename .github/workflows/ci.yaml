@@ -1,8 +1,18 @@
 name: CI
 
 on:
-  push:
-    branches: [main]
+  - push:
+      branches: [main]
+  - workflow_dispatch:
+      inputs:
+        releaseLabel:
+          description: 'Release with label'
+          required: true
+          default: 'yes'
+          type: choice
+          options:
+            - yes
+            - no
 
 jobs:
   auto:
@@ -35,9 +45,16 @@ jobs:
         node-version: 16
 
     - name: "Release"
+      if:  ${{ github.event.inputs.releaseLabel == 'yes' }}
       run: |
         yarn global add auto-plugin-composer
         ./bin/auto latest --verbose
+
+    - name: "Force release"
+      if:  ${{ github.event.inputs.releaseLabel == 'no' }}
+      run: |
+        yarn global add auto-plugin-composer
+        ./bin/auto latest --only-publish-with-release-label=false --verbose
 
 #    - name: Create Pull Request
 #      id: cpr
