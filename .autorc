@@ -1,10 +1,8 @@
 {
   "plugins": [
     ["composer", {"publishScript":"./.scripts/bump-version.sh"}],
-    ["omit-commits", {"username":"github-actions[bot]", "subject": ["WIP", "SPIKE"]}],
-    "conventional-commits"
+    ["omit-commits", {"username":["github-actions[bot]"], "subject": ["WIP"]}]
   ],
   "baseBranch": "main",
-  "author": "github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
-  "onlyPublishWithReleaseLabel": false
+  "author": "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
 }

@@ -39,13 +39,13 @@ jobs:
       if:  ${{ github.event_name == 'workflow_dispatch' }}
       run: |
         yarn global add auto-plugin-composer
-        ./bin/auto latest --verbose --only-publish-with-release-label false
+        ./bin/auto latest --verbose
 
     - name: "Release"
       if:  ${{ github.event_name != 'workflow_dispatch' }}
       run: |
         yarn global add auto-plugin-composer
-        ./bin/auto latest --verbose
+        ./bin/auto latest --verbose --only-publish-with-release-label
 
 #    - name: Create Pull Request
 #      id: cpr
