@@ -1,3 +1,23 @@
+# v0.4.5 (Tue Nov 08 2022)
+
+#### 🐛 Bug Fix
+
+- Test pr [#19](https://github.com/phamviet/symfony-auto-release-demo/pull/19) ([@phamviet](https://github.com/phamviet))
+
+#### ⚠️ Pushed to `main`
+
+- Merge remote-tracking branch 'origin/production' ([@phamviet](https://github.com/phamviet))
+- Merge remote-tracking branch 'origin/main' into production ([@phamviet](https://github.com/phamviet))
+- fix if expression ([@phamviet](https://github.com/phamviet))
+- manual release on main ([@phamviet](https://github.com/phamviet))
+- manual release on branches ([@phamviet](https://github.com/phamviet))
+
+#### Authors: 1
+
+- Viet Pham ([@phamviet](https://github.com/phamviet))
+
+---
+
 # v0.4.4 (Tue Nov 08 2022)
 
 
