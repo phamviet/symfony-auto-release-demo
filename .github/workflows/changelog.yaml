@@ -9,7 +9,7 @@ jobs:
   auto:
     name: Auto
     runs-on: ubuntu-latest
-    if: "!contains(github.event.head_commit.message, 'ci skip') && !contains(github.event.head_commit.message, 'skip ci')"
+    if: ${{ github.head_ref == 'develop' && !contains(github.event.head_commit.message, 'skip ci') }}
     env:
       RUNTIME_OS: linux
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -23,7 +23,6 @@ jobs:
       run: git fetch --depth 100 --tags
 
     - name: "Make changelong"
-      if: ${{ github.event_name == 'pull_request' && github.head_ref == 'develop' }}
       run: |
         set -xe
         git checkout $GITHUB_HEAD_REF
