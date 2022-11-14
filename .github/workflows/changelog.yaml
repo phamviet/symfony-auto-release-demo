@@ -35,5 +35,4 @@ jobs:
         VERSION=$(cat composer.json | jq -r '.version')
         ./bin/auto changelog --verbose
         git pull $GITHUB_HEAD_REF
-        git remote -v
         git push origin $GITHUB_HEAD_REF

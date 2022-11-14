@@ -1,17 +1,3 @@
-# v0.4.5 (Mon Nov 14 2022)
-
-#### 🐛 Bug Fix
-
-- revers ([@phamviet](https://github.com/phamviet))
-
-#### Authors: 1
-
-- Viet Pham ([@phamviet](https://github.com/phamviet))
-
----
-
----
-
 # v0.4.1 (Tue Nov 08 2022)
 
 #### ⚠️ Pushed to `main`
