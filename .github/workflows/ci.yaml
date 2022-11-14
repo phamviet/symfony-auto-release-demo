@@ -10,24 +10,22 @@ jobs:
     name: Auto
     runs-on: ubuntu-latest
     if: "!contains(github.event.head_commit.message, 'ci skip') && !contains(github.event.head_commit.message, 'skip ci')"
-    continue-on-error: false
-    strategy:
-      matrix:
-        php-versions: ["8.1"]
     env:
       RUNTIME_OS: linux
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
     - name: Checkout
       uses: actions/checkout@v3
+      with:
+        fetch-depth: 100
 
     - name: Prepare repository
-      run: git fetch --unshallow --tags
+      run: git fetch --depth 100 --tags
 
     - name: Setup PHP
       uses: shivammathur/setup-php@v2
       with:
-        php-version: ${{ matrix.php-versions }}
+        php-version: 8.1
         coverage: "none"
 
     - uses: actions/setup-node@v3
