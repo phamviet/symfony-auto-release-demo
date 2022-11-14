@@ -2,6 +2,36 @@
 
 #### 🐛 Bug Fix
 
+- sleep 5 ([@phamviet](https://github.com/phamviet))
+- Develop [#33](https://github.com/phamviet/symfony-auto-release-demo/pull/33) ([@github-actions[bot]](https://github.com/github-actions[bot]) [@phamviet](https://github.com/phamviet))
+- Auto merge [#32](https://github.com/phamviet/symfony-auto-release-demo/pull/32) ([@phamviet](https://github.com/phamviet) [@github-actions[bot]](https://github.com/github-actions[bot]))
+
+#### Authors: 2
+
+- [@github-actions[bot]](https://github.com/github-actions[bot])
+- Viet Pham ([@phamviet](https://github.com/phamviet))
+
+---
+
+# v0.4.8 (Mon Nov 14 2022)
+
+#### 🐛 Bug Fix
+
+- labeled ([@phamviet](https://github.com/phamviet))
+- Test protected branches ([@phamviet](https://github.com/phamviet))
+- Auto merge [#32](https://github.com/phamviet/symfony-auto-release-demo/pull/32) ([@phamviet](https://github.com/phamviet) [@github-actions[bot]](https://github.com/github-actions[bot]))
+
+#### Authors: 2
+
+- [@github-actions[bot]](https://github.com/github-actions[bot])
+- Viet Pham ([@phamviet](https://github.com/phamviet))
+
+---
+
+# v0.4.8 (Mon Nov 14 2022)
+
+#### 🐛 Bug Fix
+
 - Auto merge ([@phamviet](https://github.com/phamviet))
 
 #### Authors: 1
