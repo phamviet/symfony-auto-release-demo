@@ -2,6 +2,33 @@
 
 #### 🐛 Bug Fix
 
+- final? ([@phamviet](https://github.com/phamviet))
+- checkout ([@phamviet](https://github.com/phamviet))
+- origin ([@phamviet](https://github.com/phamviet))
+- printenv ([@phamviet](https://github.com/phamviet))
+- Fix changelog ([@phamviet](https://github.com/phamviet))
+- --no-changelog ([@phamviet](https://github.com/phamviet))
+- Develop [#20](https://github.com/phamviet/symfony-auto-release-demo/pull/20) ([@phamviet](https://github.com/phamviet))
+- Test pr [#19](https://github.com/phamviet/symfony-auto-release-demo/pull/19) ([@phamviet](https://github.com/phamviet))
+
+#### ⚠️ Pushed to `main`
+
+- Merge remote-tracking branch 'origin/production' ([@phamviet](https://github.com/phamviet))
+- Merge remote-tracking branch 'origin/main' into production ([@phamviet](https://github.com/phamviet))
+- fix if expression ([@phamviet](https://github.com/phamviet))
+- manual release on main ([@phamviet](https://github.com/phamviet))
+- manual release on branches ([@phamviet](https://github.com/phamviet))
+
+#### Authors: 1
+
+- Viet Pham ([@phamviet](https://github.com/phamviet))
+
+---
+
+# v0.4.5 (Mon Nov 14 2022)
+
+#### 🐛 Bug Fix
+
 - depth ([@phamviet](https://github.com/phamviet))
 - --unshallow ([@phamviet](https://github.com/phamviet))
 - fix from ([@phamviet](https://github.com/phamviet))
