@@ -1,7 +1,24 @@
-# v0.4.5 (Tue Nov 08 2022)
+# v0.4.5 (Mon Nov 14 2022)
 
 #### 🐛 Bug Fix
 
+- depth ([@phamviet](https://github.com/phamviet))
+- --unshallow ([@phamviet](https://github.com/phamviet))
+- fix from ([@phamviet](https://github.com/phamviet))
+- --from ([@phamviet](https://github.com/phamviet))
+- again ([@phamviet](https://github.com/phamviet))
+- revers ([@phamviet](https://github.com/phamviet))
+- test ([@phamviet](https://github.com/phamviet))
+- 0.4.4s ([@phamviet](https://github.com/phamviet))
+- 0.4.4 ([@phamviet](https://github.com/phamviet))
+- git fetch --unshallow --tags ([@phamviet](https://github.com/phamviet))
+- unshallow ([@phamviet](https://github.com/phamviet))
+- head_ref aa ([@phamviet](https://github.com/phamviet))
+- head_ref ([@phamviet](https://github.com/phamviet))
+- printenv ([@phamviet](https://github.com/phamviet))
+- add changelog ci ([@phamviet](https://github.com/phamviet))
+- Merge branch 'main' of github.com:phamviet/symfony-auto-release-demo ([@phamviet](https://github.com/phamviet))
+- Develop [#20](https://github.com/phamviet/symfony-auto-release-demo/pull/20) ([@phamviet](https://github.com/phamviet))
 - Test pr [#19](https://github.com/phamviet/symfony-auto-release-demo/pull/19) ([@phamviet](https://github.com/phamviet))
 
 #### ⚠️ Pushed to `main`

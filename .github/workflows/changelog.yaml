@@ -1,0 +1,36 @@
+name: Changelog
+
+on:
+  pull_request:
+    types: [ opened ]
+    branches: [ main ]
+
+jobs:
+  auto:
+    name: Auto
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, 'ci skip') && !contains(github.event.head_commit.message, 'skip ci')"
+    continue-on-error: false
+    strategy:
+      matrix:
+        php-versions: ["8.1"]
+    env:
+      RUNTIME_OS: linux
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      HEAD_REF: ${{ github.head_ref }}
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 100
+
+    - name: Prepare repository
+      run: git fetch --depth 100 --tags
+
+    - name: "Make changelong"
+      if: ${{ github.event_name == 'pull_request' }}
+      run: |
+        ./bin/auto changelog --verbose
+        git pull $GITHUB_HEAD_REF
+        git push origin $GITHUB_HEAD_REF
