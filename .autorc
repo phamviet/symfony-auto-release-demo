@@ -1,7 +1,6 @@
 {
   "plugins": [
-    ["composer", {"publishScript":"./.scripts/bump-version.sh"}],
-    ["omit-commits", {"username":["github-actions[bot]"], "subject": ["WIP"]}]
+    ["composer", {"publishScript":"./.scripts/bump-version.sh"}]
   ],
   "baseBranch": "main",
   "author": "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
