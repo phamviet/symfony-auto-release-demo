@@ -23,13 +23,13 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
 
-#    - name: Prepare repository
-#      run: git fetch --unshallow --tags
+    - name: Prepare repository
+      run: git fetch --tags --depth 10
 
     - name: "Make changelong"
-      if: ${{ github.event_name == 'pull_request' }}
+      if: ${{ github.event_name == 'pull_request' && github.head_ref == 'develop' }}
       run: |
         printenv
         VERSION=$(cat composer.json | jq -r '.version')
         ./bin/auto changelog --from $VERSION --verbose
-        git push origin $HEAD_REF
+        git push origin $GITHUB_HEAD_REF
