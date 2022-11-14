@@ -1,6 +1,8 @@
 name: Changelog
 
 on:
+  push:
+    branches: [ develop ]
   pull_request:
     types: [ opened ]
     branches: [ main ]
@@ -31,6 +33,8 @@ jobs:
     - name: "Make changelong"
       if: ${{ github.event_name == 'pull_request' && github.head_ref == 'develop' }}
       run: |
+        set -xe
+        printenv
         ./bin/auto changelog --verbose
         git pull $GITHUB_HEAD_REF
         git push origin $GITHUB_HEAD_REF
