@@ -2,6 +2,23 @@
 
 #### 🐛 Bug Fix
 
+- Remove GITHUB_TOKEN ([@phamviet](https://github.com/phamviet))
+- clean up 222 ([@phamviet](https://github.com/phamviet))
+- Merge remote-tracking branch 'origin/main' into develop ([@phamviet](https://github.com/phamviet))
+- clean up ([@phamviet](https://github.com/phamviet))
+- release [#29](https://github.com/phamviet/symfony-auto-release-demo/pull/29) ([@phamviet](https://github.com/phamviet) [@github-actions[bot]](https://github.com/github-actions[bot]))
+
+#### Authors: 2
+
+- [@github-actions[bot]](https://github.com/github-actions[bot])
+- Viet Pham ([@phamviet](https://github.com/phamviet))
+
+---
+
+# v0.4.6 (Mon Nov 14 2022)
+
+#### 🐛 Bug Fix
+
 - clean up ([@phamviet](https://github.com/phamviet))
 
 #### Authors: 1
