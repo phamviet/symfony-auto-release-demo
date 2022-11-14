@@ -2,6 +2,18 @@
 
 #### 🐛 Bug Fix
 
+- fix from ([@phamviet](https://github.com/phamviet))
+
+#### Authors: 1
+
+- Viet Pham ([@phamviet](https://github.com/phamviet))
+
+---
+
+# v0.4.5 (Mon Nov 14 2022)
+
+#### 🐛 Bug Fix
+
 - again ([@phamviet](https://github.com/phamviet))
 
 #### Authors: 1
