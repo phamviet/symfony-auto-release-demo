@@ -1,8 +1,8 @@
 name: CI
 
 on:
-  pull_request:
-    types: [closed]
+  push:
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
@@ -40,12 +40,6 @@ jobs:
       run: |
         yarn global add auto-plugin-composer
         ./bin/auto latest --verbose
-
-    - name: "PR Release"
-      if: ${{ github.event.pull_request.merged == true }}
-      run: |
-        yarn global add auto-plugin-composer
-        ./bin/auto latest --verbose --only-publish-with-release-label
 
     - name: "Release"
       if:  ${{ github.event_name == 'push' }}
