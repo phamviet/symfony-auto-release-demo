@@ -33,6 +33,7 @@ jobs:
           git pull
           ./bin/auto changelog --verbose
           git push origin $GITHUB_HEAD_REF
+          sleep 5
           gh pr merge $pull_number --auto --merge
           echo The PR was merged
         fi
