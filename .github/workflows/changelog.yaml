@@ -33,6 +33,6 @@ jobs:
       run: |
         printenv
         VERSION=$(cat composer.json | jq -r '.version')
-        ./bin/auto changelog --from "v$VERSION"--verbose
+        ./bin/auto changelog --from "v$VERSION" --verbose
         git pull $GITHUB_HEAD_REF
         git push origin $GITHUB_HEAD_REF
