@@ -34,9 +34,7 @@ jobs:
       if: ${{ github.event_name == 'pull_request' && github.head_ref == 'develop' }}
       run: |
         set -xe
-        printenv
-        git show-ref
+        git checkout $GITHUB_HEAD_REF
+        git pull
         ./bin/auto changelog --verbose
-        git checkout develop
-        git pull origin $GITHUB_HEAD_REF
         git push origin $GITHUB_HEAD_REF
