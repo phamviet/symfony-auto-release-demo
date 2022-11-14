@@ -25,7 +25,14 @@ jobs:
     - name: "Make changelong"
       run: |
         set -xe
-        git checkout $GITHUB_HEAD_REF
-        git pull
-        ./bin/auto changelog --verbose
-        git push origin $GITHUB_HEAD_REF
+        pull_number=$(jq --raw-output .pull_request.number "$GITHUB_EVENT_PATH")
+        label=$(gh pr view $pull_number --json labels --jq '.labels[].name|select(. == "release")')
+        
+        if [[ "release" == "$label" ]]; then
+          git checkout $GITHUB_HEAD_REF
+          git pull
+          ./bin/auto changelog --verbose
+          git push origin $GITHUB_HEAD_REF
+          gh pr merge $pull_number --auto --merge
+        fi
+        
