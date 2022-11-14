@@ -35,6 +35,7 @@ jobs:
       run: |
         set -xe
         printenv
+        git show-ref
         ./bin/auto changelog --verbose
         git pull $GITHUB_HEAD_REF
         git push origin $GITHUB_HEAD_REF
