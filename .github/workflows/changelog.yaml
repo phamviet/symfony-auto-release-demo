@@ -2,7 +2,7 @@ name: Changelog
 
 on:
   pull_request:
-    types: [ opened ]
+    types: [ opened, labeled ]
     branches: [ main ]
 
 jobs:
@@ -34,5 +34,6 @@ jobs:
           ./bin/auto changelog --verbose
           git push origin $GITHUB_HEAD_REF
           gh pr merge $pull_number --auto --merge
+          echo The PR was merged
         fi
         
