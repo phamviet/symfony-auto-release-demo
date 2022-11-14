@@ -1,8 +1,6 @@
 name: Changelog
 
 on:
-  push:
-    branches: [ changelog ]
   pull_request:
     types: [ opened ]
     branches: [ main ]
@@ -31,10 +29,8 @@ jobs:
       run: git fetch --depth 100 --tags
 
     - name: "Make changelong"
-#      if: ${{ github.event_name == 'pull_request' }}
+      if: ${{ github.event_name == 'pull_request' }}
       run: |
-        printenv
-        VERSION=$(cat composer.json | jq -r '.version')
-        ./bin/auto changelog --from "v$VERSION" --verbose
+        ./bin/auto changelog --verbose
         git pull $GITHUB_HEAD_REF
         git push origin $GITHUB_HEAD_REF
