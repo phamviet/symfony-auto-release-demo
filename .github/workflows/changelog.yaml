@@ -27,7 +27,7 @@ jobs:
       run: git fetch --tags --depth 10
 
     - name: "Make changelong"
-      if: ${{ github.event_name == 'pull_request' && github.head_ref == 'develop' }}
+      if: ${{ github.event_name == 'pull_request' }}
       run: |
         printenv
         VERSION=$(cat composer.json | jq -r '.version')
