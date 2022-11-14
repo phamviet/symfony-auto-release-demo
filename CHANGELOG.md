@@ -1,3 +1,15 @@
+# v0.4.8 (Mon Nov 14 2022)
+
+#### 🐛 Bug Fix
+
+- Auto merge ([@phamviet](https://github.com/phamviet))
+
+#### Authors: 1
+
+- Viet Pham ([@phamviet](https://github.com/phamviet))
+
+---
+
 # v0.4.7 (Mon Nov 14 2022)
 
 #### 🐛 Bug Fix
