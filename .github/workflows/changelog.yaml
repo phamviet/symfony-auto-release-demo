@@ -19,8 +19,6 @@ jobs:
     env:
       RUNTIME_OS: linux
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      HEAD_REF: ${{ github.head_ref }}
     steps:
     - name: Checkout
       uses: actions/checkout@v3
