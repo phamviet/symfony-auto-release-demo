@@ -1,3 +1,15 @@
+# v0.4.6 (Mon Nov 14 2022)
+
+#### 🐛 Bug Fix
+
+- clean up ([@phamviet](https://github.com/phamviet))
+
+#### Authors: 1
+
+- Viet Pham ([@phamviet](https://github.com/phamviet))
+
+---
+
 # v0.4.5 (Mon Nov 14 2022)
 
 #### 🐛 Bug Fix
