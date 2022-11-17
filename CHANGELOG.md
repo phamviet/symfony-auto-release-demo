@@ -2,6 +2,32 @@
 
 #### ⚠️ Added
 
+- release-0901-2022-11-17 [#41](https://github.com/phamviet/symfony-auto-release-demo/pull/41) ([@phamviet](https://github.com/phamviet) [@github-actions[bot]](https://github.com/github-actions[bot]))
+- release-0845-2022-11-17 [#40](https://github.com/phamviet/symfony-auto-release-demo/pull/40) ([@phamviet](https://github.com/phamviet) [@github-actions[bot]](https://github.com/github-actions[bot]))
+- release-0842-2022-11-17 [#39](https://github.com/phamviet/symfony-auto-release-demo/pull/39) ([@phamviet](https://github.com/phamviet) [@github-actions[bot]](https://github.com/github-actions[bot]))
+- Changelog printenv 5ss [#22](https://github.com/phamviet/symfony-auto-release-demo/pull/22) ([@phamviet](https://github.com/phamviet) [@github-actions[bot]](https://github.com/github-actions[bot]))
+
+#### ⚠️ Updated
+
+- Merge branch 'master' of github.com:phamviet/symfony-auto-release-demo ([@phamviet](https://github.com/phamviet))
+
+#### 🐛 Bug Fix
+
+- Fix all ([@phamviet](https://github.com/phamviet))
+- release-1111-2022-11-17 [#43](https://github.com/phamviet/symfony-auto-release-demo/pull/43) ([@phamviet](https://github.com/phamviet) [@github-actions[bot]](https://github.com/github-actions[bot]))
+- release-0904-2022-11-17 [#42](https://github.com/phamviet/symfony-auto-release-demo/pull/42) ([@phamviet](https://github.com/phamviet) [@github-actions[bot]](https://github.com/github-actions[bot]))
+
+#### Authors: 2
+
+- [@github-actions[bot]](https://github.com/github-actions[bot])
+- Viet Pham ([@phamviet](https://github.com/phamviet))
+
+---
+
+# v0.4.10 (Thu Nov 17 2022)
+
+#### ⚠️ Added
+
 - Merge remote-tracking branch 'origin/master' into develop ([@phamviet](https://github.com/phamviet))
 - restore ([@phamviet](https://github.com/phamviet))
 
