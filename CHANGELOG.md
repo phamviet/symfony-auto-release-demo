@@ -1,3 +1,15 @@
+# v0.4.10 (Thu Nov 17 2022)
+
+#### ⚠️ Added
+
+- --only-publish-with-release-label ([@phamviet](https://github.com/phamviet))
+
+#### Authors: 1
+
+- Viet Pham ([@phamviet](https://github.com/phamviet))
+
+---
+
 # v0.4.9 (Thu Nov 17 2022)
 
 #### ⚠️ Added
