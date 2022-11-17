@@ -1,3 +1,15 @@
+# v0.4.12 (Thu Nov 17 2022)
+
+#### ⚠️ Updated
+
+- Change label orders ([@phamviet](https://github.com/phamviet))
+
+#### Authors: 1
+
+- Viet Pham ([@phamviet](https://github.com/phamviet))
+
+---
+
 # v0.4.11 (Thu Nov 17 2022)
 
 #### ⚠️ Added
