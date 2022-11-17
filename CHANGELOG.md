@@ -1,3 +1,15 @@
+# v0.4.11 (Thu Nov 17 2022)
+
+#### ⚠️ Added
+
+- Switching to atlas ([@phamviet](https://github.com/phamviet))
+
+#### Authors: 1
+
+- Viet Pham ([@phamviet](https://github.com/phamviet))
+
+---
+
 # v0.4.10 (Thu Nov 17 2022)
 
 #### ⚠️ Added
