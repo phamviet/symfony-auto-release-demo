@@ -5,15 +5,15 @@
   "baseBranch": "master",
   "author": "github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
   "labels": [
-          {
-            "name": "pushToBaseBranch",
-            "changelogTitle": "⚠️ Updated",
+        {
+          "name": "pushToBaseBranch",
+          "changelogTitle": "⚠️ Updated",
+          "releaseType": "patch"
+        },
+        {
+            "name": "feature",
+            "changelogTitle": "🚀️ Added",
             "releaseType": "patch"
-          },
-          {
-              "name": "feature",
-              "changelogTitle": "⚠️ Added",
-              "releaseType": "patch"
-          },
-      ]
+        },
+    ]
 }
