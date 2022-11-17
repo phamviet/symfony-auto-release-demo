@@ -2,40 +2,41 @@ name: Changelog
 
 on:
   pull_request:
-    types: [ opened, labeled ]
-    branches: [ main ]
+    types: [ opened ]
+    branches: [ master ]
 
 jobs:
   auto:
-    name: Auto
+    name: Changelog
     runs-on: ubuntu-latest
-    if: ${{ github.head_ref == 'develop' && !contains(github.event.head_commit.message, 'skip ci') }}
+    if: ${{ github.head_ref == 'develop' }}
     env:
-      RUNTIME_OS: linux
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      MY_GITHUB_PAT: ${{ secrets.MY_GITHUB_PAT }}
+      VIET_PAT_TOKEN: ${{ secrets.MY_GITHUB_PAT }}
     steps:
-    - name: Checkout
-      uses: actions/checkout@v3
-      with:
-        fetch-depth: 100
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 10
+          ref: ${{ github.head_ref }}
+          token: ${{ secrets.MY_GITHUB_PAT }}
 
-    - name: Prepare repository
-      run: git fetch --depth 100 --tags
+      - name: Prepare repository
+        run: git fetch --depth 100 --tags
 
-    - name: "Make changelong"
-      run: |
-        set -xe
-        pull_number=$(jq --raw-output .pull_request.number "$GITHUB_EVENT_PATH")
-        label=$(gh pr view $pull_number --json labels --jq '.labels[].name|select(. == "release")')
-        
-        if [[ "release" == "$label" ]]; then
-          git checkout $GITHUB_HEAD_REF
-          git pull
-          ./bin/auto changelog --verbose
-          git push origin $GITHUB_HEAD_REF
-          sleep 3
-          GH_TOKEN=$MY_GITHUB_PAT gh pr merge $pull_number --auto --merge
-          echo The PR was merged
-        fi
+      - name: Set up auto
+        run: |
+          yarn global add auto@10.37.6 @auto-it/omit-commits@10.37.6 auto-plugin-composer retry-cli
+
+      - name: "Make changelog"
+        run: |
+          if auto label --pr ${{github.event.number}} --exists release; then
+            auto changelog --verbose
+            git push
+            sleep 3
+            GH_TOKEN=$VIET_PAT_TOKEN retry -n 5 -- gh pr merge ${{github.event.number}} --auto --merge
+          else
+            echo [Skipped] No "release" label found
+            exit 0
+          fi
         
