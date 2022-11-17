@@ -15,10 +15,6 @@
             "name": "pushToBaseBranch",
             "changelogTitle": "⚠️ Updated",
             "releaseType": "patch"
-          },
-          {
-            "name": "release",
-            "releaseType": "patch"
           }
       ]
 }
