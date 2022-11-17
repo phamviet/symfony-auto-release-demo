@@ -1,3 +1,18 @@
+# v0.4.9 (Thu Nov 17 2022)
+
+#### ⚠️ Added
+
+- main 2 ([@phamviet](https://github.com/phamviet))
+- main ([@phamviet](https://github.com/phamviet))
+- Merge branch 'develop' of github.com:phamviet/symfony-auto-release-demo into develop ([@phamviet](https://github.com/phamviet))
+- Big change ([@phamviet](https://github.com/phamviet))
+
+#### Authors: 1
+
+- Viet Pham ([@phamviet](https://github.com/phamviet))
+
+---
+
 # v0.4.8 (Mon Nov 14 2022)
 
 #### 🐛 Bug Fix
