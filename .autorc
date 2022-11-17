@@ -4,5 +4,17 @@
     ["omit-commits", {"username":["github-actions[bot]"], "subject": ["WIP"]}]
   ],
   "baseBranch": "main",
-  "author": "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
+  "author": "github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
+  "labels": [
+          {
+            "name": "feature",
+            "changelogTitle": "⚠️ Added",
+            "releaseType": "patch"
+          },
+          {
+            "name": "pushToBaseBranch",
+            "changelogTitle": "⚠️ Updated",
+            "releaseType": "patch"
+          }
+      ]
 }

@@ -1,0 +1,40 @@
+name: Changelog
+
+on:
+  pull_request:
+    types: [ opened ]
+    branches: [ master ]
+
+jobs:
+  auto:
+    name: Changelog
+    runs-on: ubuntu-latest
+    if: ${{ github.head_ref == 'develop' }}
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      VIET_PAT_TOKEN: ${{ secrets.MY_GITHUB_PAT }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 10
+          ref: ${{ github.head_ref }}
+          token: ${{ secrets.MY_GITHUB_PAT }}
+
+      - name: Prepare repository
+        run: git fetch --depth 100 --tags
+
+      - name: Set up auto
+        run: |
+          yarn global add auto@10.37.6 @auto-it/omit-commits@10.37.6 auto-plugin-composer retry-cli
+
+      - name: "Make changelog"
+        run: |
+          if auto label --pr ${{github.event.number}} --exists release; then
+            auto changelog --verbose
+            git push
+          else
+            echo [Skipped] No "release" label found
+            exit 0
+          fi
+        
