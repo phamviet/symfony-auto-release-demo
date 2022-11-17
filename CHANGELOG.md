@@ -2,6 +2,23 @@
 
 #### ⚠️ Added
 
+- Merge remote-tracking branch 'origin/master' into develop ([@phamviet](https://github.com/phamviet))
+- restore ([@phamviet](https://github.com/phamviet))
+
+#### ⚠️ Updated
+
+- Merge branch 'master' of github.com:phamviet/symfony-auto-release-demo ([@phamviet](https://github.com/phamviet))
+
+#### Authors: 1
+
+- Viet Pham ([@phamviet](https://github.com/phamviet))
+
+---
+
+# v0.4.10 (Thu Nov 17 2022)
+
+#### ⚠️ Added
+
 - patch ([@phamviet](https://github.com/phamviet))
 
 #### Authors: 1
