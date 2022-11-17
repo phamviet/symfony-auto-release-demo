@@ -3,7 +3,7 @@ name: Changelog
 on:
   pull_request:
     types: [ opened ]
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   auto:
