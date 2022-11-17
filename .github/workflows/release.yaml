@@ -32,8 +32,8 @@ jobs:
       - name: "Manual release"
         if: ${{ github.event_name == 'workflow_dispatch' && github.ref_name == 'master' }}
         run: |
-          yarn auto latest  --no-changelog --verbose
+          auto latest  --no-changelog --verbose
 
       - name: Auto
         run: |
-          yarn auto latest --no-changelog
+          auto latest --no-changelog
