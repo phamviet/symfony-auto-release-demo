@@ -1,0 +1,39 @@
+name: Release
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, 'ci skip') && !contains(github.event.head_commit.message, 'skip ci')"
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 10
+
+      - name: Prepare repository
+        run: git fetch --depth 10 --tags
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 8.1
+          coverage: "none"
+
+      - name: Set up auto
+        run: |
+          yarn global add auto@10.37.6 @auto-it/omit-commits@10.37.6 auto-plugin-composer
+
+      - name: "Manual release"
+        if: ${{ github.event_name == 'workflow_dispatch' && github.ref_name == 'master' }}
+        run: |
+          yarn auto latest  --no-changelog --verbose
+
+      - name: Auto
+        run: |
+          yarn auto latest --no-changelog
