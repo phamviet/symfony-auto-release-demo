@@ -36,4 +36,4 @@ jobs:
 
       - name: Auto
         run: |
-          auto latest --no-changelog
+          auto latest --no-changelog --only-publish-with-release-label --verbose
