@@ -2,7 +2,7 @@
   "plugins": [
     ["atlas", {"publishScript":"./.scripts/bump-version.sh"}]
   ],
-  "baseBranch": "main",
+  "baseBranch": "master",
   "author": "github-actions[bot] <github-actions[bot]@users.noreply.github.com>",
   "labels": [
           {
