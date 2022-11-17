@@ -1,3 +1,23 @@
+# v0.4.13 (Thu Nov 17 2022)
+
+#### ⚠️ Updated
+
+- Update base branch to master ([@phamviet](https://github.com/phamviet))
+
+#### ⚠️ Added
+
+- feat: add release example commands ([@phamviet](https://github.com/phamviet))
+
+#### 🐛 Bug Fix
+
+- fix release script ([@phamviet](https://github.com/phamviet))
+
+#### Authors: 1
+
+- Viet Pham ([@phamviet](https://github.com/phamviet))
+
+---
+
 # v0.4.12 (Thu Nov 17 2022)
 
 #### ⚠️ Updated
