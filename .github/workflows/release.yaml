@@ -19,11 +19,10 @@ jobs:
       - name: Prepare repository
         run: git fetch --depth 10 --tags
 
-      - name: Setup PHP
+      - name: Set up PHP
         uses: shivammathur/setup-php@v2
         with:
           php-version: 8.1
-          coverage: "none"
 
       - name: Set up auto
         run: |
@@ -34,6 +33,6 @@ jobs:
         run: |
           auto latest  --no-changelog --verbose
 
-      - name: Auto
+      - name: Release
         run: |
           auto latest --no-changelog --only-publish-with-release-label --verbose
