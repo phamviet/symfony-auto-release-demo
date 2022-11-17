@@ -26,7 +26,7 @@ jobs:
 
       - name: Set up auto
         run: |
-          yarn global add auto@10.37.6 @auto-it/omit-commits@10.37.6 auto-plugin-composer retry-cli
+          yarn global add auto@10.37.6 auto-plugin-composer retry-cli
 
       - name: "Make changelog"
         run: |
